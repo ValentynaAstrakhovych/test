@@ -83,7 +83,7 @@ button:active{
     width: 60px;
 }
 
-
+/*first*/
 .first{
     display: block;
     height: 548px;
@@ -118,6 +118,14 @@ button:active{
     flex-direction: row;
     justify-content: space-between;
     width: 107px;
+    height: 18px;
+}
+
+.first_nav-right button{
+    height: 18px;
+    width: 18px;
+    padding: 0;
+    border: none;
 }
 
 .first_text-on p{
@@ -177,6 +185,65 @@ button:active{
     align-items: center;
 }
 
+#womens-eyeglasses-photo{
+    display: block;
+    width: 288px;
+    height: 406px;
+    background-image: url("/images/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#womens-eyeglasses-photo:hover{
+    background-image: url("/images/1-2.png");
+    background-size: cover;
+}
+
+#womens-sunglasses-photo{
+    display: block;
+    width: 288px;
+    height: 406px;
+    background-image: url("/images/2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#womens-sunglasses-photo:hover{
+    background-image: url("/images/2-2.png");
+    background-size: cover;
+}
+
+#mens-sunglasses-photo{
+    display: block;
+    width: 288px;
+    height: 406px;
+    background-image: url("/images/3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mens-sunglasses-photo:hover{
+    background-image: url("/images/3-3.png");
+    background-size: cover;
+}
+
+#mens-eyeglasses-photo{
+    display: block;
+    width: 288px;
+    height: 406px;
+    background-image: url("/images/4-4.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mens-eyeglasses-photo:hover{
+    background-image: url("/images/4.jpg");
+    background-size: cover;
+}
+
 .second_second-part div button{
     display: block;
     margin: 0 auto;
@@ -228,6 +295,33 @@ button:active{
     flex-direction: column;
     align-items: center;
     width: 100vw;
+}
+
+#fourth_first{
+    display: block;
+    height: 600px;
+    width: 600px;
+    background-image: url("/images/fourth-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fourth_first:hover{
+    background-image: url("/images/fourth-1-2.png");
+    background-position: center;
+}
+
+#fourth_second{
+    display: block;
+    height: 600px;
+    width: 600px;
+    background-image: url("/images/fourth-2.png");
+    background-repeat: no-repeat;
+}
+
+#fourth_second:hover{
+    background-image: url("/images/fourth-2-2.png");
+    background-size: cover;
 }
 
 .fourth button{
