@@ -61,20 +61,20 @@ arrow.forEach(a=>a.addEventListener('mouseout',function(){
 
 const fourFirst=document.querySelector("#fourth_first");
 
-fourFirst.addEventListener('touchmove'){
+fourFirst.addEventListener('touchmove',(event)=>{
     fourFirst.style.backgroundImage="url('images/fourth-1-2.png')"
-};
+});
 
-fourFirst.addEventListener('touchend'){
+fourFirst.addEventListener('touchend', (event)=>{
     fourFirst.style.backgroundImage="url('images/fourth-1.png')"
-};
+});
 
 const fourSecond=document.querySelector("#fourth_second");
 
-fourSecond.addEventListener('touchmove'){
+fourSecond.addEventListener('touchmove', (event)=>{
     fourSecond.style.backgroundImage="url('images/fourth2.png')"
-};
+});
 
-four_first.addEventListener('touchend'){
+fourSecond.addEventListener('touchend', (event)=>{
     fourSecond.style.backgroundImage="url('images/fourth-2-2.png')"
-};
+});
