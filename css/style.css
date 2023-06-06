@@ -609,7 +609,7 @@ footer{
         position: absolute;
         background-color: rgba(252, 249, 249, 0.736);
         left: 0;
-        min-width: 160px;
+        min-width: 100px;
         z-index: 1;  
     }
 

@@ -52,3 +52,29 @@ arrow.forEach(a=>a.addEventListener('mouseout',function(){
     a.classList.remove('arrow-up');
     a.classList.add('arrow-down');
 }));
+
+
+/*
+
+
+*/
+
+const fourFirst=document.querySelector("#fourth_first");
+
+fourFirst.addEventListener('touchmove'){
+    fourFirst.style.backgroundImage="url('images/fourth-1-2.png')"
+};
+
+fourFirst.addEventListener('touchend'){
+    fourFirst.style.backgroundImage="url('images/fourth-1.png')"
+};
+
+const fourSecond=document.querySelector("#fourth_second");
+
+fourSecond.addEventListener('touchmove'){
+    fourSecond.style.backgroundImage="url('images/fourth2.png')"
+};
+
+four_first.addEventListener('touchend'){
+    fourSecond.style.backgroundImage="url('images/fourth-2-2.png')"
+};
