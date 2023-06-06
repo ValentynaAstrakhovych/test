@@ -26,8 +26,29 @@ function changeBg4(){
 
 setInterval(changeBg4,8000)
 
-/*language change*/
+/*burger menu*/
 
-document.querySelector("#language-en").onclick = function(){document.location='index-ru.html'};
+const menuBurger=document.querySelector(".burger");
+const navList = document.querySelector(".krea__nav");
 
-document.querySelector("#language-en-b").onclick = function(){document.location='index-ru.html'}
+menuBurger.addEventListener("click",function(){navList.style.display='block'});
+
+document.querySelector(".menu__link").addEventListener("click", function(){navList.style.display='none'})
+
+/*arrow menu down to up*/
+
+const arrow=document.querySelectorAll(".arrowtr");
+const info=document.querySelectorAll(".hide");
+
+arrow.forEach(a=>a.addEventListener('click',function(){
+    a.classList.remove('arrow-down');
+    a.classList.add('arrow-up');
+    
+    info.forEach(function(e){
+        e.style.display="block"});
+}));
+
+arrow.forEach(a=>a.addEventListener('mouseout',function(){
+    a.classList.remove('arrow-up');
+    a.classList.add('arrow-down');
+}));

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lending</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        function changeLanguage(){
+            document.location='index.html'
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -31,17 +36,20 @@
         <section>
             <div class="first">
                 <div class="first_nav">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Очки</a></li>
-                            <li><a href="#">Солнцезащитные очки </a></li>
-                            <li><a href="#">Аксессуары</a></li>
-                            <li><a href="#">О нас</a></li>
+                    <nav class="krea__nav">
+                         <ul class="menu__link">
+                            <li><a class="nav__link" href="#">Очки</a></li>
+                            <li><a class="nav__link" href="#">Солнцезащитные очки</a></li>
+                            <li><a class="nav__link" href="#">Аксессуары</a></li>
+                            <li><a class="nav__link" href="#">О нас</a></li>
                         </ul>
                     </nav>
+                    <a class="burger" id="dropDown">
+                        <span class="burger__items" ></span>
+                    </a>
                     <div class="first_nav-right">
                     <a href="#">Магазины</a>
-                    <button class="language-en">EN</button>
+                    <button class="language-to-en" onclick="changeLanguage()">EN</button>
                     </div>
                 </div>
                 <div class="first_text-on">
@@ -58,22 +66,22 @@
                         <p>Axeptio consent</p>
                         <img src="/images/second.svg" width="48" height="48">
                     </div>
-                    <p id="second">Устойчивые & любимые очки</p>
+                    <p id="second">Sustainable & Lovable Eyewear</p>
                 </div>
                 <div class="second_second-part">
-                    <div>
+                    <div class="r">
                         <div id="womens-eyeglasses-photo"></div>
                         <button type="submit" id="womens-eyeglasses" value="womens-eyeglasses">ЖЕНСКИЕ ОЧКИ</button>
                     </div>
-                    <div>
+                    <div class="r">
                         <div id="womens-sunglasses-photo"></div>
                         <button type="submit" id="womens-sunglasses" value="womens-sunglasses">СОЛНЦЕЗАЩИТНЫЕ ОЧКИ</button>
                     </div>
-                    <div>
+                    <div class="r"> 
                         <div id="mens-sunglasses-photo"></div>
                         <button type="submit" value="mens-sunglasses" id="mens-sunglasses">МУЖСКИЕ ОЧКИ</button>
                     </div>
-                    <div>
+                    <div class="r">
                         <div id="mens-eyeglasses-photo"></div>
                         <button type="submit" value="mens-eyeglasses" id="mens-eyeglasses">СОЛНЦЕЗАЩИТНЫЕ ОЧКИ</button>
                     </div>
@@ -90,11 +98,11 @@
                     <button type="submit" id="icon-collection" value="icon-collection">КОЛЛЕКЦИЯ ИКОНОК</p>
                 </div>
                 <div class="fourth_second-part">
-                    <div>
+                    <div class="fourth_second-part-1">
                         <div id="fourth_first"></div>
                         <button type="submit" id="buy-one-one" value="buy">КУПИ ОДНИ ПОДАРИ ДРУГИЕ</button>
                     </div>
-                    <div>
+                    <div class="fourth_second-part-2">
                         <div id="fourth_second"></div>
                         <button type="submit" id="book-appointment" value="appointment">ЗАПИСАТЬСЯ НА ПРИЕМ</button>
                     </div>
@@ -102,7 +110,7 @@
                 <div class="fourth_third-part">
                     <div>
                         <p>Подписаться на нашу рассылку.</p>
-                        <form >
+                        <form>
                         <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="32">
                         <input type="submit" id="subscribe" value=" " >
                         </form>
@@ -115,10 +123,16 @@
     <footer>
         <div class="footer_info">
             <div>
+                <div class="show">
                 <h3>Связаться с нами</h3>
-                <p>Лукас и его команда по-прежнему<br>
-                    готовы ответить вам
-                </p>
+                <div class="arrow-cont">
+                    <span class="arrowtr arrow-down"></span>
+                </div>
+                </div>
+                <div class="hide">
+                    <p>Лукас и его команда по-прежнему<br>
+                        готовы ответить вам
+                    </p>
                 <div class='footer_info-contact'>
                     <div>
                         <img src="/images/mail.svg" width="17" height="12" alt="email icon">
@@ -129,37 +143,59 @@
                         <a>Помощь</a>
                     </div>
                 </div>
+                </div>
             </div>
             <div>
-                <h3>О компании</h3>
+                <div class="show">
+                    <h3>О компании</h3>
+                    <div class="arrow-cont">
+                        <span class="arrowtr arrow-down"></span>
+                    </div>
+                </div>
+                <div class="hide">
                 <ul>
                     <li><a>Найти магазин</a></li>
                     <li><a>Присоединяйтесь</a></li>
                     <li><a>Связаться</a></li>
                 </ul>
+                </div>
             </div>
             <div>
-                <h3>Обслуживание<br>
-                     клиентов</h3>
+                <div class="show">
+                    <h3>Обслуживание<br>
+                        клиентов</h3>
+                        <div class="arrow-cont">
+                            <span class="arrowtr arrow-down"></span>
+                        </div>
+                </div>
+                <div class="hide">
                 <ul>
                     <li><a>Записаться<br>
-                         на прием</a></li>
-                    <li><a>Доставка и возврат</a></li>
-                    <li><a>Q&As</a></li>
+                        на прием</a></li>
+                   <li><a>Доставка и возврат</a></li>
+                   <li><a>Q&As</a></li>
                 </ul>
+               </div>
             </div>
             <div>
-                <h3>Следуй за нами</h3>
+                <div class="show">
+                    <h3>Следуй за нами</h3>
+                    <div class="arrow-cont">
+                        <span class="arrowtr arrow-down"></span>
+                    </div>
+                </div>
+                <div class="hide">
                 <ul>
                     <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
                     <li><a href="https://www.tiktok.com/en/" target="_blank">TikTok</a></li>
                     <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
                 </ul>
+                </div>
             </div>
         </div>
         <div class="bottom-line">
             <p>Legal</p>
-            <button type="submit" class="language-ru" value="change-language">RU</button>
+            <button class="language-to-en" onclick="changeLanguage()">EN</button>
         </div>
     </footer>
     <script src="main.js"></script>

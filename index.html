@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lending</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        function changeLanguage(){
+            document.location='index-ru.html'
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -31,17 +36,20 @@
         <section>
             <div class="first">
                 <div class="first_nav">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Eyeglasses</a></li>
-                            <li><a href="#">Sunglasses</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">About</a></li>
+                    <nav class="krea__nav">
+                        <ul class="menu__link">
+                            <li><a class="nav__link" href="#">Eyeglasses</a></li>
+                            <li><a class="nav__link" href="#">Sunglasses</a></li>
+                            <li><a class="nav__link" href="#">Accessories</a></li>
+                            <li><a class="nav__link" href="#">About</a></li>
                         </ul>
                     </nav>
+                    <a class="burger" id="dropDown">
+                        <span class="burger__items" ></span>
+                    </a>
                     <div class="first_nav-right">
                     <a href="#">Our stores</a>
-                    <button id="language-en">EN</button>
+                    <button class="language-to-ru" onclick="changeLanguage()">RU</button>
                     </div>
                 </div>
                 <div class="first_text-on">
@@ -61,19 +69,19 @@
                     <p id="second">Sustainable & Lovable Eyewear</p>
                 </div>
                 <div class="second_second-part">
-                    <div>
+                    <div class="r">
                         <div id="womens-eyeglasses-photo"></div>
                         <button type="submit" id="womens-eyeglasses" value="womens-eyeglasses">WOMEN'S EYEGLASSES</button>
                     </div>
-                    <div>
+                    <div class="r">
                         <div id="womens-sunglasses-photo"></div>
                         <button type="submit" id="womens-sunglasses" value="womens-sunglasses">WOMEN'S SUNGLASSES</button>
                     </div>
-                    <div>
+                    <div class="r"> 
                         <div id="mens-sunglasses-photo"></div>
                         <button type="submit" value="mens-sunglasses" id="mens-sunglasses">MEN'S SUNGLASSES</button>
                     </div>
-                    <div>
+                    <div class="r">
                         <div id="mens-eyeglasses-photo"></div>
                         <button type="submit" value="mens-eyeglasses" id="mens-eyeglasses">MEN'S EYEGLASSES</button>
                     </div>
@@ -90,11 +98,11 @@
                     <button type="submit" id="icon-collection" value="icon-collection">ICONS COLLECTION</p>
                 </div>
                 <div class="fourth_second-part">
-                    <div>
+                    <div class="fourth_second-part-1">
                         <div id="fourth_first"></div>
                         <button type="submit" id="buy-one-one" value="buy">BUY ONE GIVE ONE</button>
                     </div>
-                    <div>
+                    <div class="fourth_second-part-2">
                         <div id="fourth_second"></div>
                         <button type="submit" id="book-appointment" value="appointment">BOOK AN APPOINTMENT</button>
                     </div>
@@ -115,7 +123,13 @@
     <footer>
         <div class="footer_info">
             <div>
+                <div class="show">
                 <h3>Contact us</h3>
+                <div class="arrow-cont">
+                    <span class="arrowtr arrow-down"></span>
+                </div>
+                </div>
+                <div class="hide">
                 <p>Lucas and his team are still<br>
                     there to answer you
                 </p>
@@ -129,37 +143,59 @@
                         <a>Help</a>
                     </div>
                 </div>
+                </div>
             </div>
             <div>
-                <h3>About us</h3>
+                <div class="show">
+                    <h3>About us</h3>
+                    <div class="arrow-cont">
+                        <span class="arrowtr arrow-down"></span>
+                    </div>
+                </div>
+                <div class="hide">
                 <ul>
                     <li><a>Find a Store</a></li>
                     <li><a>Join us</a></li>
                     <li><a>Press contact</a></li>
                 </ul>
+                </div>
             </div>
             <div>
-                <h3>Castomer<br>
-                care</h3>
+                <div class="show">
+                    <h3>Castomer<br>
+                        care</h3>
+                        <div class="arrow-cont">
+                            <span class="arrowtr arrow-down"></span>
+                        </div>
+                </div>
+                <div class="hide">
                 <ul>
                     <li><a>Book an<br>
                     Appointment</a></li>
                     <li><a>Shipping & Returns</a></li>
                     <li><a>Q&As</a></li>
                 </ul>
+               </div>
             </div>
             <div>
-                <h3>Follow us</h3>
+                <div class="show">
+                    <h3>Follow us</h3>
+                    <div class="arrow-cont">
+                        <span class="arrowtr arrow-down"></span>
+                    </div>
+                </div>
+                <div class="hide">
                 <ul>
                     <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
                     <li><a href="https://www.tiktok.com/en/" target="_blank">TikTok</a></li>
                     <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
                 </ul>
+                </div>
             </div>
         </div>
         <div class="bottom-line">
             <p>Legal</p>
-            <button type="submit" id="language-en-b" value="change-language">EN</button>
+            <button class="language-to-ru" onclick="changeLanguage()">RU</button>
         </div>
     </footer>
     <script src="main.js"></script>

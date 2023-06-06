@@ -52,7 +52,6 @@ button:active{
 
 .header_first-line{
     display: block;
-    width: 100%;
     height: 40px;
     background-color: #000000;
     padding-top: 16px;
@@ -65,7 +64,7 @@ button:active{
 .header_second-line{
     display: grid;
     height: 50px;
-    grid-template-columns: 93% 7%;
+    grid-template-columns: 90% 10%;
     padding-top: 19px;
 }
 
@@ -80,14 +79,18 @@ button:active{
     display: inline-flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    width: 60px;
+    width: fit-content;
 }
+
+.header_main-nav a:nth-of-type(-n+2){
+    margin-right: 10px;
+}
+
 
 /*first*/
 .first{
     display: block;
     height: 548px;
-    width: 100%;
     background-image: url("../images/main.png");
     background-position: center;
     background-size: cover;
@@ -134,12 +137,13 @@ button:active{
     float:right;
     margin-top: 30vh;
     margin-right:3vw;
+    color: #000000;
 }
 
 /*second*/
 
 .second{
-    height: 887px;
+    height: fit-content;
     padding:0px 6px 89px 6px;
 }
 
@@ -192,6 +196,7 @@ button:active{
     background-image: url("/images/1.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 #womens-eyeglasses-photo:hover{
@@ -207,6 +212,7 @@ button:active{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 #womens-sunglasses-photo:hover{
@@ -222,6 +228,7 @@ button:active{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 #mens-sunglasses-photo:hover{
@@ -237,6 +244,7 @@ button:active{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 #mens-eyeglasses-photo:hover{
@@ -257,7 +265,7 @@ button:active{
     background-image: url("../images/third.jpg");
     background-size: cover;
     height: 460px;
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
 }
 
@@ -266,6 +274,7 @@ button:active{
 .fourth{
     display: block;
     height: 1230px;
+    margin: 0 auto;
 }
 
 .fourth_first-part{
@@ -304,11 +313,11 @@ button:active{
     background-image: url("/images/fourth-1.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 #fourth_first:hover{
     background-image: url("/images/fourth-1-2.png");
-    background-position: center;
 }
 
 #fourth_second{
@@ -317,11 +326,11 @@ button:active{
     width: 600px;
     background-image: url("/images/fourth-2.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #fourth_second:hover{
     background-image: url("/images/fourth-2-2.png");
-    background-size: cover;
 }
 
 .fourth button{
@@ -389,8 +398,10 @@ button:active{
 
 footer{
     display: block;
-    height: 408px;
+    height: fit-content;
     background-color: #FAFAFA;
+    margin: 0 auto;
+    padding-bottom: 32px;
 }
 
 .footer_info{
@@ -407,6 +418,29 @@ footer{
     font-size: 20px;
     margin-bottom: 27px;
 }
+
+/*try*/
+.arrow-cont{
+    display: none;
+}
+
+.arrow-cont span{
+    border: solid black;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 6px;
+}
+
+.arrow-up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/**/
 
 .footer_info div p{
     font-family: 'Open Sans';
@@ -454,7 +488,6 @@ footer{
 }
 
 .bottom-line{
-    margin-top: 130px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -462,9 +495,253 @@ footer{
     flex-wrap: nowrap;
     align-items: center;
     height: 24px;
-    width: 100%;
     color: #939292;
     font-family: 'Open Sans';
     font-size: 13px;
-    margin:131px auto 32px auto;
+    margin:131px auto auto auto;
+}
+
+/*MEDIA*/
+
+@media  screen and (max-width:1149px) {
+    .second_second-part{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "div div"
+        "div div";
+        height: 900px;
+        margin: o auto;
+    }
+
+    .second_second-part  div button{
+        margin-top: 14px;
+        margin-bottom: 10px;
+    }
+    
+
+}
+
+@media screen and (max-width:880px) {
+   /* .fourth_second-part div:last-of-type{
+        display: none;
+    }*/
+    .fourth{
+        height: 1926px;
+    }
+
+    .fourth_second-part{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+        height:fit-content;
+    }
+
+    #buy-one-one{
+        margin-bottom: 40px;
+    }
+/*hide footer menu*/
+    .hide{
+        display: none;
+    }
+
+    .footer_info{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .show{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 140px;
+        margin-bottom: 10px;
+    }
+    .arrow-cont{display: block;}
+    
+    .footer_info div h3{
+        display: block;
+        font-family: 'Open Sans';
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .header_main-nav a:nth-of-type(-n+2){
+        display: none;
+    }
+
+    .header_second-line{
+        grid-template-columns: 95% 5%;
+    }
+
+    .first{
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:570px){
+    .fourth_third-part div{
+        display: flex;
+        width: 286px;
+        height: 117px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 auto;
+    }
+/*main menu*/
+    .krea__nav {
+        display:  none;
+        margin-top: 23px;
+        position: absolute;
+        background-color: rgba(252, 249, 249, 0.736);
+        left: 0;
+        min-width: 160px;
+        z-index: 1;  
+    }
+
+    .burger {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;   
+    }
+    
+    .burger span,
+    .burger::before,
+    .burger::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all .2s linear;
+        background-color: #000000;
+    }
+    
+    .burger::before,
+    .burger::after {
+        content: "";
+    }
+    
+    .burger::before {
+        top: 0;
+    }
+    
+    .burger::after {
+         bottom: 0;
+    }
+    
+    .burger span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    
+    
+    .menu__link {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 100px 5px 12px 5px;
+    }
+
+
+    .third{
+        background-size: contain;
+        height: 270px;
+    }
+
+/**/
+
+    .second_first-part{
+        height: 220px;
+    }
+
+    #second{
+        font-size: 20px;
+    }
+
+/**/
+.second_second-part{
+    height: 450px;
+}
+
+#womens-eyeglasses-photo{
+    width: 144px;
+    height: 202px;
+}
+
+#womens-sunglasses-photo{
+    width: 144px;
+    height: 202px;
+}
+
+#mens-sunglasses-photo{
+    width: 144px;
+    height: 202px;
+}
+
+#mens-eyeglasses-photo{
+    width: 144px;
+    height: 202px;
+}
+
+
+.second_second-part div button{
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.second_second-part  div button{
+    margin-top: 6px;
+    margin-bottom: 4px;
+    font-size: 10px;
+}
+
+/**/
+
+.fourth{
+    height: 1100px;
+}
+
+.fourth_first-part{
+    height: 50px;
+    padding-top: 0;
+}
+
+#fourth_second, #fourth_first{
+    height: 300px;
+    width: 300px;}
+}
+
+@media screen and (max-width:500px){
+    .first_text-on p{
+        float:left;
+        margin-left:5vw;
+        color: #000000;
+    }
+}
+
+@media screen and (max-width:401px){
+    
+.header_first-line{
+    height: 35px;
+    font-size: 10px;
+}
 }
