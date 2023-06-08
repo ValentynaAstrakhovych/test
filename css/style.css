@@ -607,19 +607,23 @@ footer{
         display:  none;
         margin-top: 23px;
         position: absolute;
-        background-color: rgba(252, 249, 249, 0.736);
+        background-color:inherit;
         left: 0;
-        min-width: 100px;
+        min-width: 150px;
         z-index: 1;  
     }
 
+     .first_nav nav ul li {
+        margin:0px;
+     }
+    
     .burger {
-        z-index: 5;
+        z-index: 2;
         display: block;
         position: relative;
         width: 30px;
         height: 18px;
-        cursor: pointer;   
+        cursor: pointer;  
     }
     
     .burger span,
@@ -655,8 +659,9 @@ footer{
     .menu__link {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
-        padding: 100px 5px 12px 5px;
+        justify-content: space-between;
+        height: ;
+        padding: 100px 5px 12px 15px;
     }
 
 

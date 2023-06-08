@@ -6,25 +6,25 @@ function changeBg(){
     imgA.style.backgroundImage="url('images/main2.jpeg')";
 }
 
- setInterval(changeBg, 1500)
+ setInterval(changeBg, 2500)
 
 function changeBg2(){
     imgA.style.backgroundImage="url('images/main3.webp')";
 }
 
-setInterval(changeBg2,2500)
+setInterval(changeBg2,5000)
 
 function changeBg3(){
     imgA.style.backgroundImage="url('images/main4.webp')";
 }
 
-setInterval(changeBg3, 3500)
+setInterval(changeBg3, 7500)
 
 function changeBg4(){
     imgA.style.backgroundImage="url('images/main.png')";
 }
 
-setInterval(changeBg4,4500)
+setInterval(changeBg4,10000);
 
 /*burger menu*/
 
